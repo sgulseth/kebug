@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-RUN apt-get -y update && apt-get -y install vim curl dnsutils
+RUN apt-get -y update && apt-get -y install vim curl dnsutils traceroute mtr
 ADD curl-format.txt
 
 CMD ["/bin/bash"]
